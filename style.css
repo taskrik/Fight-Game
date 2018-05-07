@@ -1,0 +1,58 @@
+
+body {
+  background-image: url(images/forest.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.wrap {
+  width: 80%;
+  margin: 25px auto;
+  text-align: center;
+  padding: 10px;
+  color: white;
+
+}
+
+.wrap h3 {
+  font-size: 3.2em;
+  font-family: sans-serif;
+}
+
+#game-message{
+  font-size: 1.8em;
+
+  font-style: italic;
+
+}
+
+ 
+
+#game-message2{
+  font-size: 2.4em;
+
+}
+
+
+
+.wrap span {
+  color: red;
+  padding-left: 20px;
+}
+
+button {
+  width: 150px;
+  height: 80px;
+  background-color: lightblue;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 1px solid grey;
+  margin: 20px 0;
+}
+
+button:hover {
+  opacity: 0.9;
+}

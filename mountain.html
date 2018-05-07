@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+  <title>Epic Adventures</title>
+
+</head>
+
+<body>
+
+  <div id="main-info" class="orc-info">
+  <label>Health:</label><h3 id="info">150</h3>
+  <label>Power:</label><h3 id="info">70</h3>
+  </div>
+
+  <div id="image">
+    <h1>A huge Troll is on your way!</h1>
+    <a id="troll" href="fight3.html"><img id="hover" src="images/troll.png" alt="" onmouseover="show_info()" onmouseout="hide_info()"></a>
+    <h2>Will you <a href="fight3.html" onmouseover="show_info()" onmouseout="hide_info()">FIGHT</a> or <a href="start.html">RUN</a>?</h2>
+  </div>
+
+  <a href="index.html"><button type="button" name="button">Main menu</button></a>
+
+  <audio src="/music/assassin.mp3" autoplay loop controls>
+
+  </audio>
+
+<style media="screen">
+
+
+
+
+
+  body{
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    background-image: url("/images/mountain.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #image {
+    height: 650px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-size: 1.8em;
+  }
+
+  #image img {
+
+    height: 540px;
+    position: absolute;
+    top: 55px;
+    right: 580px;
+
+  }
+
+  img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+
+  }
+
+  .orc-info {
+    height: 100px;
+    width: 200px;
+    background-color: #004080;
+    position: absolute;
+    top: 260px;
+    right: 30%;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 30px;
+    border: 1px solid white;
+
+  }
+
+  #main-info {
+    visibility: hidden;
+  }
+
+
+  #info, label{
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 5px 5px;
+    display: inline;
+  }
+
+
+
+  #image h1 {
+    padding-top: 10px;
+    margin: 0 auto;
+
+
+  }
+
+  #image h2 {
+    padding-top: 525px;
+    font-size: 1em;
+  }
+
+
+
+  a {
+    color: red;
+  }
+
+  button {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+  }
+
+  audio {
+    width: 100px;
+
+    opacity: 0.3;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+
+
+  }
+
+  audio:hover {
+    opacity: 0.7;
+  }
+
+
+
+</style>
+
+<script type="text/javascript">
+
+function show_info()
+{
+document.getElementById('main-info').style.visibility="visible";
+}
+
+function hide_info()
+{
+document.getElementById('main-info').style.visibility="hidden";
+}
+
+</script>
+
+
+
+</body>
+</html>

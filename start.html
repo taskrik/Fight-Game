@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/avara" type="text/css"/>
+
+
+
+  <title>Epic Adventures</title>
+
+</head>
+
+<body>
+
+
+  <div id="image">
+    <h1>Choose your path warrior!</h1>
+    <h2>Will you go to the <span>FOREST</span> to <span>CASTLE</span> or to the <span>MOUNTAIN</span>?</h2>
+  </div>
+
+<div id="titles">
+
+
+  <div id="forest">
+    <a href="forest.html">Go to Forest <br> (lvl. 1)</a>
+  </div>
+
+  <div id="castle">
+    <a href="castle.html">Go to Castle <br> (lvl. 2)</a>
+  </div>
+
+  <div id="mountain">
+    <a href="mountain.html">Go to the Mountain <br> (lvl. 3)</a>
+  </div>
+
+</div>
+
+  <a href="index.html"><button type="button" name="button">Main menu</button></a>
+
+  <audio src="music/start.mp3" autoplay loop controls>
+
+  </audio>
+
+<style media="screen">
+
+  body{
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    background-image: url("/images/start.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #image {
+    height: 650px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-size: 1.8em;
+  }
+
+  a {
+    color: red;
+  }
+
+  #image h1 {
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    margin: 0 auto;
+    font-family: avara;
+  }
+
+  #image h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
+    font-size: 1em;
+  }
+
+  h2 span{
+    color: red;
+
+  }
+
+  #titles {
+    font-family: avara;
+  }
+
+  #forest a {
+    position: absolute;
+    top: 250px;
+    left: 40px;
+    width: 300px;
+    height: 180px;
+    font-size: 1.8em;
+    padding-top: 140px;
+    text-decoration: none;
+  }
+
+  #mountain a {
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    width: 300px;
+    height: 200px;
+    font-size: 1.8em;
+    padding-top: 140px;
+  }
+
+  #castle a {
+    position: absolute;
+    top: 320px;
+    left: 710px;
+    width: 140px;
+    height: 70px;
+    font-size: 1.4em;
+    padding-top: 50px;
+
+  }
+
+  #castle a, #mountain a, #forest a{
+    color: white;
+    text-decoration: none;
+
+  }
+
+  #castle a:hover,#mountain a:hover,#forest a:hover {
+    background-color: rgba(256, 256, 256, 0.5);
+  }
+
+  button {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+  }
+
+  audio {
+    width: 100px;
+
+    opacity: 0.3;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+
+
+  }
+
+  audio:hover {
+    opacity: 0.7;
+  }
+
+
+
+
+
+</style>
+
+</body>
+</html>
